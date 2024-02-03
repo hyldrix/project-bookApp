@@ -25,20 +25,23 @@
 
     class BookList {
 
-        constructor(){
-
+        constructor() {
+            const thisBooksList = this;
+            thisBooksList.initData();
+            thisBooksList.render(thisBooksList);
+            thisBooksList.initActions();
         }
 
-        initData(){
+        initData() {
             this.data = dataSource.books;
         }
 
-        render (source) {
+        render(source) {
             const thisBook = this;
 
             for (let book of source.data) {
                 book.ratingBgc = thisBook.determineRatingBgc(book.rating);
-                book.ratingWidth = Math.floor(book.rating / 10 * 100)
+                book.ratingWidth = Math.floor(book.rating / 10 * 100);
                 const generatedHTML = templates.bookTemplate(book);
                 thisBook.element = utils.createDOMFromHTML(generatedHTML);
                 document.querySelector(select.dom.booksList).appendChild(thisBook.element);
@@ -117,16 +120,10 @@
             }
         }
 
-        init() {
-            const thisApp = this;
-            thisApp.initData();
-            thisApp.render(thisApp);
-            thisApp.initActions();
-        }
+
     }
 
     const app = new BookList();
-
-    app.init();
+    app();
 
 }
