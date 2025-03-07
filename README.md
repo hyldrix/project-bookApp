@@ -1,5 +1,4 @@
-# Project - BookApp - Static Page
-
+# Project - BookApp
 This project has been completed as a part of JavaScript Front-end Bootcamp @ Kodilla.
 Project utilises clean JavaScript and templating library Handlebars. During the project I have learned how to work with DOM objects, apply templates and render changes on pages.
 
