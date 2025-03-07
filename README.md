@@ -9,11 +9,6 @@ Double-click on the item enables user to add book to "favourites". There is also
 
 ![BooksApp](https://github.com/hyldrix/project-bookApp/blob/main/preview/preview.png?raw=true)
 
-
-## Where to view
-
-- **Live Preview:** []()
-
 ## Repository
 
 - **Repo address**: https://github.com/hyldrix/project-bookApp.git
